@@ -17,3 +17,13 @@ $ conda create -n mini-rag-apply python=3.8
 ```
 3. activate the enviroment 
 conda activete mini-rag-apply (project_name)
+
+
+
+### Optional setup you command line for better readablity 
+```bash 
+
+export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
+
+``` 
+

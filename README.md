@@ -27,3 +27,16 @@ export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
 
 ``` 
 
+### Instaltion 
+
+### install the requierments packege 
+```
+pip install -r requirements.txt
+
+```
+### setup the enviroment variables 
+```
+cp .env.example .env 
+
+```
+go to the .env after stup and put your main cridanilas and API's Key "confegiration

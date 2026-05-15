@@ -12,11 +12,11 @@ Download Miniconda from [Here :https://anaconda.com/api/installers/Miniconda3-la
 
 2. then create a new enviroment using the following command :
 ```
-$ conda create -n mini-rag-apply python=3.8 
+$ conda create -n mini-rag-apply python=3.11 pip # make sure that the python version had  
 
 ```
 3. activate the enviroment 
-conda activete mini-rag-apply (project_name)
+conda activete mini-rag-apply 
 
 
 
@@ -31,7 +31,7 @@ export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
 
 ### install the requierments packege 
 ```
-pip install -r requirements.txt
+pip install -r requirements.txt (which have the servers for prudcation and stream)
 
 ```
 ### setup the enviroment variables 
@@ -40,3 +40,15 @@ cp .env.example .env
 
 ```
 go to the .env after stup and put your main cridanilas and API's Key "confegiration
+
+### how to run Fast API 
+
+make a main.py file an take the app that we make with 
+
+call hash ``` uvicorn main:app ```
+
+then add http://127.0.0.1:8000/welcome 
+then add docs and turn to swagger UI http://127.0.0.1:8000/docs 
+
+you can use https://www.postman.com check vid 5 from 7:30 till 10:34
+you can also recall with uvicorn main:app --reload --host 0.0.0.0 --port 5000

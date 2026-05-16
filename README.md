@@ -50,5 +50,11 @@ call hash ``` uvicorn main:app ```
 then add http://127.0.0.1:8000/welcome 
 then add docs and turn to swagger UI http://127.0.0.1:8000/docs 
 
-you can use https://www.postman.com check vid 5 from 7:30 till 10:34
-you can also recall with uvicorn main:app --reload --host 0.0.0.0 --port 5000
+you can use https://www.postman.com make a coliication and then add a request and then name it and then put what exatly after the / of the main host 
+you can also recall with
+### calling the fast API server 
+ uvicorn main:app --reload --host 0.0.0.0 --port 5000 
+
+ **GET {{api}}/welcome
+
+

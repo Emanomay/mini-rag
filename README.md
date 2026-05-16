@@ -57,4 +57,16 @@ you can also recall with
 
  **GET {{api}}/welcome
 
+### Json file for the coolication 
+/mnt/c/Users/DELL/mini-rag-apply/assets/mini-rag-apply.postman_collection.json
+
+### make a folder for routes to spaertae the load each srever in deff fiels to make it stucured 
+
+1. make the __init__.py folder 
+2. make the base.py folder to put the defult route 
+  - call the fastapi and APIRouter
+  - define the APIrouter 
+  - type the defult function 
+  - make the decirator with the defined varibale.get("/request")
+  then go to the main and then type app.include_router(base.base_router)
 
